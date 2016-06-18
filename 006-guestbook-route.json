@@ -1,0 +1,17 @@
+{
+    "kind": "Route",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "guestbook",
+        "labels": {
+            "app": "guestbook"
+        }
+    },
+    "spec": {
+        "host": "guestbook-devopsday.apps.10.2.2.2.xip.io",
+        "to": {
+            "kind": "Service",
+            "name": "guestbook"
+        }
+    }
+}
